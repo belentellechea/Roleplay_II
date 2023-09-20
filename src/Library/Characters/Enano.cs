@@ -1,27 +1,27 @@
 namespace RoleplayGame
 {
-    public class Knight
+    public class Enano : IPersonaje
     {
         private int health = 100;
 
-        public Knight(string name)
+        public Enano(string name)
         {
             this.Name = name;
         }
 
         public string Name { get; set; }
 
-        public Sword Sword { get; set; }
+        public Axe Axe { get; set; }
 
         public Shield Shield { get; set; }
 
-        public Armor Armor { get; set; }
+        public Helmet Helmet { get; set; }
 
         public int AttackValue
         {
             get
             {
-                return Sword.AttackValue;
+                return Axe.AttackValue;
             }
         }
 
@@ -29,7 +29,7 @@ namespace RoleplayGame
         {
             get
             {
-                return Armor.DefenseValue + Shield.DefenseValue;
+                return Shield.DefenseValue + Helmet.DefenseValue;
             }
         }
 

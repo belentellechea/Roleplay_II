@@ -1,10 +1,10 @@
 namespace RoleplayGame
 {
-    public class Archer
+    public class Elfo : IPersonaje
     {
         private int health = 100;
 
-        public Archer(string name)
+        public Elfo(string name)
         {
             this.Name = name;
         }
