@@ -1,6 +1,8 @@
+using System.Data.Common;
+
 namespace RoleplayGame
 {
-    public class Helmet
+    public class Helmet : IDefenseItem
     {
         public int DefenseValue
         {
