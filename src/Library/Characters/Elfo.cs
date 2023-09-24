@@ -55,5 +55,10 @@ namespace RoleplayGame
         {
             this.Health = 100;
         }
+
+        public void CureSomeone(IPersonaje someone)
+        {
+            someone.Cure();
+        }
     }
 }
